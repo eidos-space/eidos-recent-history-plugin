@@ -3,7 +3,7 @@
   "id": "eidos.recent-history",
   "name": "最近打开",
   "description": "自动记录文件的打开历史",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "requires": { "pluginApi": "3.6.0" },
   "background": {
     "entry": "./background.ts",
