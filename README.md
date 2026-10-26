@@ -1,12 +1,15 @@
 # Recent History
 
-A local recent-files plugin for Eidos Lite 0.28.0 or later (Plugin API 3.6). [中文](README.zh-CN.md)
+A local recent-files plugin for Eidos Lite hosts implementing Plugin API 3.7. [Chinese](README.zh-CN.md)
+
+Requires Eidos Lite 0.29.0 or later and Plugin API 3.7.0. Names, commands, UI labels and bundled documentation follow
+the host's English or Simplified Chinese language setting.
 
 Enable the plugin and approve file-open metadata access and automatic startup.
 It records file paths, opening counts and opening times whenever this Space is
 open, including while the panel is closed. It does not read file contents or
-access the network. Open **最近打开** in the sidebar, or run **最近打开：打开面板**
-from Cmd+K. Search by path, sort by recent activity or opening count, and click
+access the network. Open **Recent History** in the sidebar, or run **Recent History: Open Panel**
+from Cmd+K. Search by path, click any column header to toggle sorting, and click
 a file to reopen it. The panel shows up to 200 matching files.
 
 Changes are saved every 10 seconds to plugin-private storage on this device.
@@ -28,8 +31,9 @@ Events carry `id`, `timestamp` (Unix milliseconds) and a Space-relative `path`.
 This requires `background.fileHistory: true` and host approval. Stopping the
 background disposes its listeners; closing the panel leaves recording active.
 
-This repository is the maintained source. It uses the published plugin SDK and
-tools 0.8.0. Node >=22.12 and pnpm are required.
+This repository is the maintained source. Node >=22.12 and pnpm are required.
+The lockfile pins published SDK/tools 0.9.0; no sibling Eidos checkout or
+private toolchain archives are needed.
 
 ```sh
 pnpm install --frozen-lockfile

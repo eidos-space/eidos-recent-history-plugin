@@ -2,8 +2,8 @@
 # reviewed tarballs before publishing this plugin. Other packages retain pnpm's
 # default release-age policy.
 minimumReleaseAgeExclude:
-  - '@eidos.space/plugin-sdk@0.8.0'
-  - '@eidos.space/plugin-tools@0.8.0'
+  - '@eidos.space/plugin-sdk@0.9.0'
+  - '@eidos.space/plugin-tools@0.9.0'
 
 allowBuilds:
   esbuild: true

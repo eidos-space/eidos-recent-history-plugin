@@ -9,11 +9,11 @@ importers:
   .:
     devDependencies:
       '@eidos.space/plugin-sdk':
-        specifier: 0.8.0
-        version: 0.8.0
+        specifier: 0.9.0
+        version: 0.9.0
       '@eidos.space/plugin-tools':
-        specifier: 0.8.0
-        version: 0.8.0
+        specifier: 0.9.0
+        version: 0.9.0
       jsdom:
         specifier: 26.1.0
         version: 26.1.0
@@ -62,11 +62,11 @@ packages:
       better-sqlite3:
         optional: true
 
-  '@eidos.space/plugin-sdk@0.8.0':
-    resolution: {integrity: sha512-DVR8zwnk8f/wWOsehHQYQ33lZ+4pCQTCYp+GFTA692PO9PA/5jMv4l1DInrVg9vmT7Q7IqWammypggTEqLLHHw==}
+  '@eidos.space/plugin-sdk@0.9.0':
+    resolution: {integrity: sha512-dRJtH6TCvRcjnl2QdQcm7PPmIGirVr2F/FlKLYnGicBmA3F543kVTVM+nRX8vo+zCmue+SfzvazHZYopcNT95A==}
 
-  '@eidos.space/plugin-tools@0.8.0':
-    resolution: {integrity: sha512-DGuR++KUrZRasqJZvWpmg9aw6+2x40wrqOjvverLhW3qqMgykMfEBROySZtOQVBt7uHOOTugu2iZ6vHtRPeKAA==}
+  '@eidos.space/plugin-tools@0.9.0':
+    resolution: {integrity: sha512-28B/ZzfrObELe8YFJy8bJwFIJV8yvXLF7bnsu0s663Z3OBEp//tTJ9ZhHdmxXaOxIWsN5bssGzR+5XsJw6e1eA==}
     engines: {node: '>=22.12.0'}
     hasBin: true
 
@@ -824,16 +824,16 @@ snapshots:
       '@sqlite.org/sqlite-wasm': 3.45.3-build2
       csv-parse: 7.0.3
 
-  '@eidos.space/plugin-sdk@0.8.0':
+  '@eidos.space/plugin-sdk@0.9.0':
     dependencies:
       '@eidos.space/eidos-file': 3.5.0
     transitivePeerDependencies:
       - better-sqlite3
 
-  '@eidos.space/plugin-tools@0.8.0':
+  '@eidos.space/plugin-tools@0.9.0':
     dependencies:
       '@eidos.space/eidos-file': 3.5.0
-      '@eidos.space/plugin-sdk': 0.8.0
+      '@eidos.space/plugin-sdk': 0.9.0
       esbuild: 0.28.1
       postcss: 8.5.28
       typescript: 5.9.3
