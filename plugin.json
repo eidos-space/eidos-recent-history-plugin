@@ -1,30 +1,55 @@
 {
   "apiVersion": 1,
   "id": "eidos.recent-history",
-  "name": "最近打开",
-  "description": "自动记录文件的打开历史",
-  "version": "1.0.1",
-  "requires": { "pluginApi": "3.6.0" },
+  "name": "%plugin.name%",
+  "description": "%plugin.description%",
+  "version": "1.1.0",
+  "requires": {
+    "pluginApi": "3.7.0"
+  },
   "background": {
     "entry": "./background.ts",
     "fileHistory": true,
     "autoStart": true
   },
-  "storage": { "maxBytes": 16777216 },
+  "storage": {
+    "maxBytes": 16777216
+  },
   "extension": "./extension.ts",
   "views": [
     {
       "id": "history",
-      "title": "最近打开",
+      "title": "%views.history.title%",
       "kind": "page",
       "entry": "./page.ts"
     }
   ],
   "actions": [
-    { "id": "open", "title": "最近打开：打开面板", "context": "workspace" }
+    {
+      "id": "open",
+      "title": "%actions.open.title%",
+      "context": "workspace"
+    }
   ],
   "placements": [
-    { "location": "navigation", "view": "history" },
-    { "location": "command-palette", "action": "open" }
-  ]
+    {
+      "location": "navigation",
+      "view": "history"
+    },
+    {
+      "location": "command-palette",
+      "action": "open"
+    }
+  ],
+  "i18n": {
+    "defaultLocale": "en",
+    "messages": {
+      "en": "./locales/en.json",
+      "zh-CN": "./locales/zh-CN.json"
+    },
+    "readme": {
+      "en": "./README.md",
+      "zh-CN": "./README.zh-CN.md"
+    }
+  }
 }

@@ -1,7 +1,8 @@
-Recent History 1.0.1 automatically records file openings in an authorized Eidos Lite Space, including while its panel is closed.
+## What's new
 
-- Search file paths, sort by latest visit or opening count, and click to reopen a file.
-- Open the panel from the sidebar or Cmd+K.
-- Saves changes every 10 seconds in local plugin-private storage. No file contents are read and no network access is requested.
+- Add English and Simplified Chinese plugin names, descriptions and bundled documentation, selected using the host language.
+- Translate plugin controls and messages using the host's language API. User content, file paths and stored configuration values retain their original values.
 
-Requires Eidos Lite 0.28.0 or later (Plugin API 3.6.0). Enable the plugin and approve file-open metadata access and automatic startup for each Space. Unsaved events from the last interval may be lost when the background stops. History is not synced.
+## Requirements
+
+Requires Eidos Lite 0.29.0 or later with Plugin API 3.7.0. This archive is not supported by CLI Serve. Current Android and iOS hosts do not support this archive; existing older installations remain usable.

@@ -1,9 +1,11 @@
 {
   "name": "eidos-recent-history-plugin",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "private": true,
   "type": "module",
-  "engines": { "node": ">=22.12.0" },
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "repository": "https://github.com/eidos-space/eidos-recent-history-plugin",
   "scripts": {
     "check": "eidos-plugin check . --target lite",
@@ -11,8 +13,8 @@
     "test": "vitest run"
   },
   "devDependencies": {
-    "@eidos.space/plugin-sdk": "0.8.0",
-    "@eidos.space/plugin-tools": "0.8.0",
+    "@eidos.space/plugin-sdk": "0.9.0",
+    "@eidos.space/plugin-tools": "0.9.0",
     "vitest": "4.1.11",
     "jsdom": "26.1.0"
   }

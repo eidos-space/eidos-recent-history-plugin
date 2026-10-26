@@ -1,0 +1,17 @@
+{
+  "plugin.name": "最近打开",
+  "plugin.description": "自动记录文件的打开历史",
+  "views.history.title": "最近打开",
+  "actions.open.title": "最近打开：打开面板",
+  "command.open": "最近打开：打开面板",
+  "file": "文件",
+  "count": "次数",
+  "recent": "最近打开",
+  "search": "搜索文件路径…",
+  "loading": "加载中…",
+  "unavailable": "记录暂不可用，请重新打开面板。",
+  "empty": "暂无记录",
+  "noMatches": "没有匹配的文件",
+  "invalidData": "后台返回的数据无效",
+  "readError": "无法读取历史"
+}

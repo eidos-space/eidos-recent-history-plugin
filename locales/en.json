@@ -1,0 +1,17 @@
+{
+  "plugin.name": "Recent History",
+  "plugin.description": "Automatically records file opening history",
+  "views.history.title": "Recent History",
+  "actions.open.title": "Recent History: Open Panel",
+  "command.open": "Recent History: Open Panel",
+  "file": "File",
+  "count": "Opens",
+  "recent": "Last opened",
+  "search": "Search file paths…",
+  "loading": "Loading…",
+  "unavailable": "History is unavailable. Reopen the panel to reconnect.",
+  "empty": "No history yet",
+  "noMatches": "No matching files",
+  "invalidData": "Invalid background response",
+  "readError": "Cannot read history"
+}
